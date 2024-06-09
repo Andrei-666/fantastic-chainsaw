@@ -1,0 +1,30 @@
+Sigma:
+    0
+    1
+End
+States:
+    q1
+    q1_q2
+    q3
+    q2_q3
+    D
+End
+Start:
+    q1
+End
+Final:
+    q3
+    q2_q3
+End
+Transitions:
+    q1, 0, q1_q2
+    q1, 1, q3
+    q3, 1, q1_q2
+    q1_q2, 0, q1_q2
+    q1_q2, 1, q2_q3
+    q2_q3, 0, q1
+    q2_q3, 1, q1_q2
+    q3, 0, D
+    D, 0, D
+    D, 1, D
+End
